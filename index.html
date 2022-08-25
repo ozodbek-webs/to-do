@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Damion&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <style>
+        * {
+            font-family: 'Damion', cursive;
+        }
+
+        input {
+            width: 380px;
+            height: 50px;
+            margin: 5px;
+            font-size: 20px;
+            box-shadow: inset 0px 0px 10px 10px silver;
+        }
+
+        input:active,
+        input:hover {
+            box-shadow: inset 0px 0px 5px 5px silver;
+        }
+
+        .p1 {
+            color: blue;
+            margin: 4px;
+            background-color: rgb(255, 0, 0);
+        }
+
+        .p2 {
+            color: mediumblue;
+            margin: 4px;
+            position: absolute;
+            left: 200px;
+            background-color: rgb(255, 0, 0);
+        }
+
+        .todo_element {
+            display: flex;
+        }
+
+        form {
+            display: flex;
+        }
+
+        .inbtn {
+            background-color: blue;
+            border: none;
+            width: 150px;
+            margin: 5px;
+        }
+
+        .btn {
+            background-color: red;
+            border: none;
+            position: absolute;
+            left: 545px;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .container {
+            width: 500px;
+            height: 500px;
+            background-color: lime;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <form>
+            <div>
+                <input type="text">
+            </div>
+            <button class="inbtn">to do yaratish</button>
+        </form>
+        <div class="content_todo_app"></div>
+    </div>
+    <script src="./script.js"></script>
+
+</body>
+
+</html>
